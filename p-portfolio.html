@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Personal Portfolio Page</title>
+        <title>Denis King &CenterDot; Web Developer</title>
         <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after"  content="1 days">
+        <meta name="author" content="denismytin@gmail.com">
+        <meta name="generator" content="none">
+        <meta name="description" content="Denis King | Web Developer site introduces Denis, his previous projects, and a way to contact him.">
+        <meta name="keywords" content="Website, Static Website, HTML, CSS, Javascript, Web Design, Web Developer, App">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="p-potfolio.css">
+        <meta property="og:title" content="Denis King | Web Developer">
+        <meta property="og:type" content="Website">
+        <meta property="og:url" content="https://www.github.io/denisKing">
+        <meta property="og:image" content="">
+        <meta property="og:image-width" content="650">
+        <meta property="og:image-height" content="350">
+        <meta property="og:description" content="Denis King | Web Developer site introduces Denis, his previous projects, and mediums to contact him.">
+        <link rel="stylesheet" href="p-portfolio-v-1.1.css">
+        <!--
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        -->
         <script src="https://kit.fontawesome.com/45fbaa9681.js" crossorigin="anonymous"></script>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {dataLayer.push(argument);}
+            gtag('js', new Date());
+            gtag('config', 'UA-184625931-1');
+        </script>
     </head>
     <body>
        <nav id="navbar">
            <ul class="links">
                <li><a href="#welcome-section">About</a></li>
                <li><a href="#works">Works</a></li>
-               <li><a href="#contact">Contact</a></li>
+               <li><a href="#contact-info">Contact</a></li>
            </ul>
        </nav> 
        <main id="central">
@@ -27,13 +50,15 @@
            <div id="projects">
                <article>
                    <section class="project-text">
-                       <h1>These are some of my projects</h1>
+                       <h1>Projects</h1>
                    </section>
 
 
                    <section class="projects" id="works">
                        <!--Attach several projects in a flex-box-->
                        <div class="project-tile project-one">
+                    <!--The images are currently hosted locally -  to be rendered when internet connection is off;
+                    Attach urls to specified images to render when site is running remotely -->
                                 
                         <a href=""><img src="./images/entertainment.PNG" alt="Music concept design" width="400" height="300" srcset=""></a>
                         <p class="caption">Music Site Concept</p>
@@ -43,7 +68,7 @@
                        <div class="project-tile project-two">
                         <a href=""><img src="./images/church.PNG" alt="Music concept design" width="400" height="300" srcset=""></a>
                         <p class="caption">Church Site Concept</p>
-                    </div>
+                        </div>
 
                     <div class="project-tile project-three">
                         <a href="https://codepen.io/mytin-design/full/abLVZQQ"><img src="./images/form.PNG" alt="Music concept design" width="400" height="300" srcset=""></a>
@@ -62,7 +87,7 @@
 
                     <div class="project-tile project-six">
                         <a href="https://codepen.io/mytin-design/full/ZEXXqmL"><img src="./images/tribute-page.PNG" alt="Music concept design" width="400" height="300" srcset=""></a>
-                        <p class="caption">Tribute Page</p>
+                        <p class="caption"> Tribute Page </p>
                     </div>
 
                     <div class="project-tile project-seven">
@@ -82,22 +107,27 @@
            <footer class="foo" id="contact">
                <div class="work-together">
                    <div class="lets-work">
-                        <h2>Let's work together...</h2>
-                        <p><em>How do you take your coffee?</em></p>
+                        <h2>HTML | Css | Bootstrap | Js</h2>
+                        <p><em>Service Above And Beyond</em></p>
                     </div>
                     <div id="contact-info">
-                        <p><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/mytin-design">Facebook</a></p>
-                           <p><i class="fa fa-github"></i> <a href="https://github.com/mytin-design">Github</a></p>
-                           <p><i class="fa fa-twitter"></i> <a href="https://www.twitter.com/mytin-design">Twitter</a></p>
-                           <p><i class="fa fa-envelope"></i> <a href="mailto:denismytin@gmail.com">Send a mail</a></p>
-                           <p><i class="fa fa-mobile"></i> <a href="+254719444041">Call me</a></p>
-                       </div>
+                        <p><i class="fab fa-facebook-square"></i> <a class="c-link blue" href="https://www.facebook.com/mytin-design">Facebook</a></p>
+                           <p><i class="fa fa-github"></i> <a class="c-link navy" href="https://github.com/mytin-design">Github</a></p>
+                           <p><i class="fa fa-twitter"></i> <a class="c-link skyblue" href="https://www.twitter.com/mytin-design">Twitter</a></p>
+                           <p><i class="fa fa-envelope"></i> <a class="c-link blue" href="mailto:denismytin@gmail.com">Send an mail</a></p>
+                           <p><i class="fa fa-mobile"></i> <a class="c-link green" href="+254719444041">WhatsApp</a></p>
+                    </div>
                </div>
                
                <hr size="3"  color="red">
+
+               <!--Add a blog link, -->
                <div class="commentaries">
-                   <p>This portfolio is the sole property of Denis Mytin and Akkadian Inc. For more information on the same please contact us through the specified mediums.</p>
-                   <p>@Created for Denis Mytin & Akkadian Inc.</p>
+                   <p>This portfolio is the sole property of Denis King & Mytin-designs Inc</p>
+                   <p>@Created for Denis King & Mytin-designs Inc</p>
+               </div>
+               <div class="copyright">
+                   <p class="c-right" style="padding: 2rem .5rem">D.K. 2022 &copy;</p>
                </div>
            </footer>
 
